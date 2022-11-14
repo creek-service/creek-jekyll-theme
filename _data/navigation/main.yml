@@ -1,0 +1,12 @@
+# Main masthead nav menu
+- title: "Quick-Start Guide"
+  url: /docs/quick-start-guide/
+- title: "About"
+  url: /about/
+# todo
+#- title: "Sample Posts"
+#  url: /year-archive/
+#- title: "Sample Collections"
+#  url: /collection-archive/
+#- title: "Terms &amp; Privacy Policy"
+#  url: /terms/
