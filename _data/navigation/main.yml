@@ -1,12 +1,9 @@
-# Main masthead nav menu
+# Main masthead nav menu, shared across sites.
 - title: "Quick-Start Guide"
   url: /docs/quick-start-guide/
 - title: "About"
   url: /about/
-# todo
-#- title: "Sample Posts"
-#  url: /year-archive/
-#- title: "Sample Collections"
-#  url: /collection-archive/
-#- title: "Terms &amp; Privacy Policy"
-#  url: /terms/
+- title: "Demos"
+  url: /demos/
+- title: "Terms &amp; Privacy Policy"
+  url: /terms/
