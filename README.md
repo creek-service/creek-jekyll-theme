@@ -53,3 +53,29 @@ To add a custom directory to your theme-gem, please edit the regexp in `creek-je
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Releasing
+
+Manual process for now. Automation covered by [issue 1](https://github.com/creek-service/creek-jekyll-theme/issues/1)
+
+1. Update version number in the [gemspec](creek-jekyll-theme.gemspec).
+2. Commit & push
+   ```shell
+   git add -A
+   git commit -m "Bump release version"
+   git push 
+   ```
+3. Build the gem:
+   ```shell
+   gem build creek-jekyll-theme.gemspec
+   ```
+4. Release the gem:
+   ```shell
+   gem push creek-jekyll-theme-*.gem
+   ```
+
+### Dropping a release
+
+```shell
+gem yank creek-jekyll-theme -v VERSION_TO_DROP  
+```

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "creek-jekyll-theme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Creek Service - Big Andy Coates"]
   spec.email         = ["8012398+big-andy-coates@users.noreply.github.com"]
 
@@ -10,7 +10,19 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/creek-service/creek-jekyll-theme"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(_data|_includes|_layouts|_pages|_sass|assets|LICENSE|README|_config\.yml)!i) }
+  spec.metadata["plugin_type"] = "theme"
 
-  spec.add_runtime_dependency "jekyll", "~> 4.3"
+  spec.files                   = `git ls-files -z`.split("\x0").select do |f|
+    f.match(%r{^(assets|_(data|includes|layouts|sass)/|(LICENSE|README|CHANGELOG)((\.(txt|md|markdown)|$)))}i)
+  end
+
+  spec.add_runtime_dependency "jekyll", ">= 4.3", "< 5.0"
+  spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
+  spec.add_runtime_dependency "jekyll-sitemap", "~> 1.3"
+  spec.add_runtime_dependency "jekyll-gist", "~> 1.5"
+  spec.add_runtime_dependency "jekyll-feed", "~> 0.1"
+  spec.add_runtime_dependency "jekyll-include-cache", "~> 0.1"
+
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "rake", ">= 12.3.3"
 end
