@@ -15,16 +15,16 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Creek Service"
 title_separator          : "-"
-name                     : # &name is a YAML anchor which can be *referenced later
-description              : # Used in SEO
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Creek Service"
+description              : "Quickly build & test an ecosystem of JVM based microservices, using Kafka clients, Kafka Streams and more." # Used in SEO
+url                      : "https://www.creekservice.org"
 # baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/creek-logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Write business logic" # overrides the website title displayed in the masthead, use " " for no title
 subtitle                 : "Not boilerplate" # custom site tagline that appears below site title in masthead
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -96,7 +96,7 @@ analytics:
   provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "G-CZC5Z8YNH8"
-    anonymize_ip         : # true, false (default)
+    anonymize_ip         : true # true, false (default)
 
 
 # Site Author
@@ -107,24 +107,15 @@ author:
   location         : "UK"
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
+    - label: "Creek Service"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://www.creekservice.org"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/big-andy-coates"
+    - label: "linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/andrew-coates-33874a44"
 
 # Site Footer
 footer:
@@ -225,18 +216,8 @@ defaults:
     values:
       layout: single
       author_profile: false
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "docs"
+      toc: true
+      toc_sticky: true
 
 # Sass/SCSS
 sass:
