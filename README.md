@@ -58,18 +58,22 @@ The theme is available as open source under the terms of the [MIT License](https
 
 Manual process for now. Automation covered by [issue 1](https://github.com/creek-service/creek-jekyll-theme/issues/1)
 
-1. Update version number in the [gemspec](creek-jekyll-theme.gemspec).
-2. Commit & push
+1. Delete previous built versions:
+   ```shell
+   rm -f creek-jekyll-theme-*.gem
+   ```
+2. Update version number in the [gemspec](creek-jekyll-theme.gemspec).
+3. Commit & push
    ```shell
    git add -A
    git commit -m "Bump release version"
    git push 
    ```
-3. Build the gem:
+4. Build the gem:
    ```shell
    gem build creek-jekyll-theme.gemspec
    ```
-4. Release the gem:
+5. Release the gem:
    ```shell
    gem push creek-jekyll-theme-*.gem
    ```
