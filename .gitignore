@@ -1,6 +1,17 @@
+# Jekyll generated files
 *.gem
 .bundle
 .jekyll-cache
 .sass-cache
 _site
 Gemfile.lock
+.jekyll-metadata
+_asset_bundler_cache
+
+# macOS
+.DS_Store
+
+# IDEA
+.idea
+
+
