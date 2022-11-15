@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "creek-jekyll-theme"
-  spec.version       = "0.3.0"
+  spec.version       = "0.4.0"
   spec.authors       = ["Creek Service - Big Andy Coates"]
   spec.email         = ["8012398+big-andy-coates@users.noreply.github.com"]
 
@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.metadata["plugin_type"] = "theme"
 
   spec.files                   = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r!^(_data|_includes|_layouts|_sass|assets|LICENSE|README'.md|_config\.yml|404\.md)!i)
+    f.match(%r!^(_data|_includes|_layouts|_plugins|_sass|assets|LICENSE|README'.md|_config\.yml|404\.md)!i)
   end
 
   spec.add_runtime_dependency "jekyll", ">= 4.3", "< 5.0"
@@ -23,6 +23,10 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-feed", "~> 0.1"
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.1"
   spec.add_runtime_dependency "jekyll-algolia", "~> 1.7"
+
+  # Required by _plugins/flexible_include
+  spec.add_runtime_dependency "jekyll_plugin_logger", "~> 2.0"
+  spec.add_runtime_dependency "key-value-parser", "~> 0.0.2"
 
   spec.add_runtime_dependency "jemoji", "~> 0.12.0"
 
