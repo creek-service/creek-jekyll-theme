@@ -19,3 +19,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+creek-jekyll-theme incorporates [flexible_include](https://github.com/mslinn/jekyll_flexible_include_plugin)
+creator Mike Slinn.
+flexible_include is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
