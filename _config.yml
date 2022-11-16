@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Andy Coates"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://avatars.githubusercontent.com/u/8012398?v=4"
   bio              : "Software engineer with a passion for building working, scalable, systems"
   location         : "UK"
   email            :
@@ -206,9 +206,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: false # true
+      comments: true
       share: true
-      related: false # true
+      related: true
   # _pages
   - scope:
       path: "_pages"
@@ -235,10 +235,11 @@ timezone: "Europe/London" # https://en.wikipedia.org/wiki/List_of_tz_database_ti
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  # Last to ensure all generated content is in the site map
+  - jekyll-sitemap
 
 # mimic GitHub Pages with --safe
 whitelist:

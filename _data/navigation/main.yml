@@ -1,9 +1,13 @@
-# Main masthead nav menu, shared across sites.
+# Main masthead nav menu.
+# Links are absolute as this masthead is shared across sites.
+
 - title: "Quick-Start Guide"
-  url: /docs/quick-start-guide/
+  url: https://www.creekservice.org/docs/quick-start-guide/
 - title: "Demos"
-  url: /demos/
+  url: https://www.creekservice.org/demos/
+- title: "Posts"
+  url: https://www.creekservice.org/posts/
 - title: "About"
-  url: /about/
+  url: https://www.creekservice.org/about/
 - title: "Terms &amp; Privacy Policy"
-  url: /terms/
+  url: https://www.creekservice.org/terms/
