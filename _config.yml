@@ -239,8 +239,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll_plugin_logger
-  - key_value_parser
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -249,9 +247,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll_plugin_logger
-  - key_value_parser
-
 
 # Archives
 #  Type

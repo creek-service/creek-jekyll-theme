@@ -73,7 +73,11 @@ Manual process for now. Automation covered by [issue 1](https://github.com/creek
    ```shell
    gem build creek-jekyll-theme.gemspec
    ```
-5. Release the gem:
+5. Install locally for testing
+   ```shell
+   gem install creek-jekyll-theme-*.gem
+   ```
+6. Release the gem:
    ```shell
    gem push creek-jekyll-theme-*.gem
    ```
