@@ -1,9 +1,9 @@
 # Main masthead nav menu, shared across sites.
 - title: "Quick-Start Guide"
   url: /docs/quick-start-guide/
-- title: "About"
-  url: /about/
 - title: "Demos"
   url: /demos/
+- title: "About"
+  url: /about/
 - title: "Terms &amp; Privacy Policy"
   url: /terms/
