@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "creek-jekyll-theme"
-  spec.version       = "0.4.2"
+  spec.version       = "0.4.3"
   spec.authors       = ["Creek Service - Big Andy Coates"]
   spec.email         = ["8012398+big-andy-coates@users.noreply.github.com"]
 
@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
 
   # Required by _plugins/flexible_include
   spec.add_dependency "jekyll_plugin_logger", "~> 2.0"
-  spec.add_dependency "key-value-parser", "~> 0.0"
+  spec.add_dependency "key-value-parser"
 
   spec.add_runtime_dependency "jemoji", "~> 0.12.0"
 
