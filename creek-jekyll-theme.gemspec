@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "creek-jekyll-theme"
-  spec.version       = "1.0.0"
+  spec.version       = "1.1.0"
   spec.authors       = ["Creek Service - Big Andy Coates"]
   spec.email         = ["8012398+big-andy-coates@users.noreply.github.com"]
 
@@ -24,6 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.1"
   spec.add_runtime_dependency "jekyll-algolia", "~> 1.7"
   spec.add_runtime_dependency "jemoji", "~> 0.12.0"
+  spec.add_runtime_dependency "jekyll-last-modified-at", "~> 1.1"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake", ">= 12.3.3"
