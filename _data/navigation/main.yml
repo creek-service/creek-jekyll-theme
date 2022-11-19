@@ -2,14 +2,14 @@
 # Links are absolute as this masthead is shared across sites.
 
 - title: "Quick-Start Guide"
-  url: https://www.creekservice.org/docs/quick-start-guide/
-- title: "Demos"
-  url: https://www.creekservice.org/demos/
-- title: "Extension"
-  url: https://www.creekservice.org/extensions/
+  url: /docs/quick-start-guide/
+- title: "Tutorials"
+  url: /demos/
+- title: "Extensions"
+  url: /extensions/
 - title: "Announcements"
-  url: https://www.creekservice.org/posts/
+  url: /posts/
 - title: "About"
-  url: https://www.creekservice.org/about/
+  url: /about/
 - title: "Terms &amp; Privacy Policy"
-  url: https://www.creekservice.org/terms/
+  url: /terms/
