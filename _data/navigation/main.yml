@@ -1,7 +1,7 @@
 # Main masthead nav menu.
 # Links are absolute as this masthead is shared across sites.
 
-- title: "Quick-Start Guide"
+- title: "Documentation"
   url: /docs/quick-start-guide/
 - title: "Tutorials"
   url: /tutorials/

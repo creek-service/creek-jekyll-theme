@@ -93,7 +93,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "G-CZC5Z8YNH8"
     anonymize_ip         : true # true, false (default)
@@ -226,7 +226,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:categories/:title
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: "Europe/London" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones

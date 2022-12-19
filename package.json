@@ -1,11 +1,11 @@
 {
-  "name": "minimal-mistakes",
+  "name": "creek-jekyll-theme",
   "private": true,
   "version": "4.24.0",
-  "description": "Minimal Mistakes 2 column Jekyll theme.",
+  "description": "The theme used by www.creekservice.org, based off of Minimal Mistakes.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mmistakes/minimal-mistakes.git"
+    "url": "git://github.com/creek-service/creek-jekyll-theme.git"
   },
   "keywords": [
     "jekyll",
@@ -15,9 +15,9 @@
   "author": "Michael Rose",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
+    "url": "https://github.com/creek-service/creek-jekyll-theme/issues"
   },
-  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
+  "homepage": "https://www.creekservice.org/",
   "engines": {
     "node": ">= 0.10.0"
   },
