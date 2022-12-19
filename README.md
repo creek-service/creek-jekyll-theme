@@ -69,15 +69,20 @@ Manual process for now. Automation covered by [issue 1](https://github.com/creek
    git commit -m "Bump release version"
    git push 
    ```
-4. Build the gem:
+4. Push a new git tag for the version:
+   ```shell
+   git tag v?.?.? <-- set version
+   git push --tag
+   ```
+5. Build the gem:
    ```shell
    gem build creek-jekyll-theme.gemspec
    ```
-5. Install locally for testing
+6. Install locally for testing
    ```shell
    gem install creek-jekyll-theme-*.gem
    ```
-6. Release the gem:
+7. Release the gem:
    ```shell
    gem push creek-jekyll-theme-*.gem
    ```
