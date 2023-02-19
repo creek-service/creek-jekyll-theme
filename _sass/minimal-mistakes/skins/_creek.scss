@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Creek skin
+   ========================================================================== */
+
+/* Colors */
+$lightest-blue: #8ECAE6 !default;
+$light-blue:    #219EBC !default;
+$dark-blue:     #203047 !default;
+$yellow:        #FFB703 !default;
+$orange:        #FB8500 !default;
+
+$primary-color: $light-blue !default;
+$success-color: #27ae60 !default;
+$warning-color: $orange !default;
+$danger-color : #c0392b !default;
+$info-color   : $lightest-blue !default;
+
+$text-color: $dark-blue !default;
+$muted-text-color: $yellow !default;
+$border-color: mix(#fff, #393e46, 75%) !default;
+$footer-background-color: $primary-color !default;
+$link-color                 : $orange !default;
+$link-color-hover           : mix(#000, $link-color, 25%) !default;
+$link-color-visited         : mix(#fff, $link-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $text-color !default;
+$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+
+.page__footer {
+  color: #fff !important; // override
+}
+
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}

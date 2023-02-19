@@ -9,7 +9,7 @@
 # Requires: https://github.com/github/pages-gem/pull/855
 
 # remote_theme           : "creek-service/creek-service.github.io"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "creek" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -21,7 +21,7 @@ url                      : "https://www.creekservice.org"
 # baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/creek-logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/logo_drop_shadow.png"
 masthead_title           : "Write business logic" # overrides the website title displayed in the masthead, use " " for no title
 subtitle                 : "Not boilerplate" # custom site tagline that appears below site title in masthead
 breadcrumbs              : false # true, false (default)
@@ -83,7 +83,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/creek-logo.png" # Open Graph/Twitter default site image
+og_image                 : "/assets/images/logo_drop_shadow.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
