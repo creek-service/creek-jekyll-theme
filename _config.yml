@@ -13,7 +13,7 @@ minimal_mistakes_skin    : "creek" # "air", "aqua", "contrast", "dark", "dirt", 
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Creek Service"
+title                    : "Creek Service, write business logic, not boilerplate"
 title_separator          : "-"
 name                     : "Creek Service"
 description              : "Quickly build & test an ecosystem of JVM based microservices, using Kafka clients, Kafka Streams and more." # Used in SEO
@@ -263,10 +263,10 @@ whitelist:
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: /categories/
+  path: /posts/categories/
 tag_archive:
   type: liquid
-  path: /tags/
+  path: /posts/tags/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
