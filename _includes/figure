@@ -1,9 +1,12 @@
 <figure class="{{ include.class }}">
+  <a class="image-popup" href="{{ include.image_path | relative_url }}" title="{{ include.caption }}">
   <img src="{{ include.image_path | relative_url }}"
-       alt="{% if include.alt %}{{ include.alt }}{% endif %}">
+         alt="{{ include.alt }}"
+         style="max-width: {{ include.max-width | default: "100%" }};" />
+  </a>
   {%- if include.caption -%}
-    <figcaption>
-      {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
-    </figcaption>
+  <figcaption>
+    {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
+  </figcaption>
   {%- endif -%}
 </figure>
