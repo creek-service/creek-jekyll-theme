@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "creek-jekyll-theme"
-  spec.version       = "1.4.1"
+  spec.version       = "1.5.0"
   spec.authors       = ["Creek Service - Big Andy Coates"]
   spec.email         = ["8012398+big-andy-coates@users.noreply.github.com"]
 
-  spec.summary       = "A Jekyll theme gem, indented only for the Creek website."
+  spec.summary       = "A Jekyll theme gem, intended only for the Creek website."
   spec.homepage      = "https://github.com/creek-service/creek-jekyll-theme"
   spec.license       = "MIT"
 

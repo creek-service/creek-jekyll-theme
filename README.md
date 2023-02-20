@@ -27,10 +27,11 @@ Or install it yourself as:
 ```shell
 $ gem install creek-jekyll-theme
 ```
+
 ## Usage
 
 The theme is a fork of [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), with a load of shared
-defaults, images, data, etc.
+defaults, images, data, and customisations.
 
 ## Contributing
 
@@ -42,13 +43,13 @@ to the [Contributor Covenant](https://www.contributor-covenant.org/) code of con
 
 To set up your environment to develop this theme, run `bundle install`.
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open 
-your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. 
-like normal to test your theme's contents. As you make modifications to your theme and to your content, 
-your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+This theme is set up just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open 
+your browser at `http://localhost:4000`. This starts a Jekyll server using this theme. Add pages, documents, data, etc. 
+like normal to test the theme's contents. As you make modifications to the theme and to your content, 
+the site will regenerate, and you should see the changes in the browser after a refresh, just like normal.
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `creek-jekyll-theme.gemspec` accordingly.
+When the theme is released, only the files in `_dat`, `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to the theme-gem, please edit the regexp in `creek-jekyll-theme.gemspec` accordingly.
 
 ## License
 
@@ -56,35 +57,21 @@ The theme is available as open source under the terms of the [MIT License](https
 
 ## Releasing
 
-Manual process for now. Automation covered by [issue 1](https://github.com/creek-service/creek-jekyll-theme/issues/1)
+Releases will automatically be built and pushed to [Ruby Gems](https://rubygems.org/gems/creek-jekyll-theme) when
+a release tag is pushed to git. 
+Currently, the process of updating the gemspec version and pushing a matching git tag is a manual process:
 
-1. Delete previous built versions:
-   ```shell
-   rm -f creek-jekyll-theme-*.gem
-   ```
-2. Update version number in the [gemspec](creek-jekyll-theme.gemspec).
-3. Commit & push
+1. Update version number in the [gemspec](creek-jekyll-theme.gemspec).
+2. Commit & push
    ```shell
    git add -A
    git commit -m "Bump release version"
    git push 
    ```
-4. Push a new git tag for the version:
+3. Push a new git tag, matching the new version in the gemspec:
    ```shell
    git tag v?.?.? <-- set version
    git push --tag
-   ```
-5. Build the gem:
-   ```shell
-   gem build creek-jekyll-theme.gemspec
-   ```
-6. Install locally for testing
-   ```shell
-   gem install creek-jekyll-theme-*.gem
-   ```
-7. Release the gem:
-   ```shell
-   gem push creek-jekyll-theme-*.gem
    ```
 
 ### Dropping a release
