@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    creek-jekyll-theme (1.7.2)
+    creek-jekyll-theme (1.7.3)
       jekyll (>= 4.3, < 5.0)
       jekyll-algolia (~> 1.7)
       jekyll-feed (~> 0.1)
