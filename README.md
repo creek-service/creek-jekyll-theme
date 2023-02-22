@@ -55,6 +55,18 @@ To add a custom directory to the theme-gem, please edit the regexp in `creek-jek
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
+## Building locally
+
+To build and install locally from source, follow these steps:
+
+1. Update version number in the [gemspec](creek-jekyll-theme.gemspec).
+2. Run: 
+   ```shell
+   rm creek-jekyll-theme-*.gem
+   gem build creek-jekyll-theme.gemspec
+   gem install creek-jekyll-theme-*.gem
+   ```
+
 ## Releasing
 
 Releases will automatically be built and pushed to [Ruby Gems](https://rubygems.org/gems/creek-jekyll-theme) when
