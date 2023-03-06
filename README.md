@@ -74,7 +74,10 @@ a release tag is pushed to git.
 Currently, the process of updating the gemspec version and pushing a matching git tag is a manual process:
 
 1. Update version number in the [gemspec](creek-jekyll-theme.gemspec).
-2. Run `bundle update` to pick up the new version
+2. Run the following to pick up the new version:
+   ```shell
+   bundle update
+   ```
 3. Commit & push
    ```shell
    git add -A
@@ -83,7 +86,8 @@ Currently, the process of updating the gemspec version and pushing a matching gi
    ```
 4. Push a new git tag, matching the new version in the gemspec:
    ```shell
-   git tag v?.?.? <-- set version
+   GEM_VERSION=$(sed -nr 's/.*spec\.version[^"]*"([1-9.]+)"/\1/p' creek-jekyll-theme.gemspec)
+   git tag v$GEM_VERSION
    git push --tag
    ```
 
