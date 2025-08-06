@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-gist", "~> 1.5"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.1"
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.1"
-  spec.add_runtime_dependency "jekyll-sass-converter", "~> 2.2"
+  spec.add_runtime_dependency "jekyll-sass-converter", ">= 2.2", "< 4.0"
   spec.add_runtime_dependency "jekyll-algolia", "~> 1.7"
   spec.add_runtime_dependency "jemoji", ">= 0.12", "< 0.14"
   spec.add_runtime_dependency "jekyll-last-modified-at", "~> 1.1"
