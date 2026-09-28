@@ -33,6 +33,55 @@ $ gem install creek-jekyll-theme
 The theme is a fork of [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), with a load of shared
 defaults, images, data, and customisations.
 
+### `include_snippet` Liquid tag
+
+The gem also bundles an `include_snippet` Liquid tag, which includes a named snippet of text from another file
+into a page or post - handy for keeping code samples in docs in sync with the actual source. It's a drop-in
+replacement for the [`jekyll-include_snippet`](https://github.com/tomdalling/jekyll-include_snippet) gem, with
+one behavioural fix: an explicit `from <path>` on a tag now always takes precedence over a page's
+`snippet_source` front matter default, rather than being silently overridden by it.
+
+To use it, add this gem to the `jekyll_plugins` group in your `Gemfile` instead of (or as well as, if you're
+also using the theme) adding it as a plain gem, so Jekyll requires it as a plugin:
+
+```ruby
+group :jekyll_plugins do
+  gem "creek-jekyll-theme"
+end
+```
+
+If you were previously using the `jekyll-include_snippet` gem directly, remove it - `include_snippet` tags in
+your markdown work unchanged, no content needs to change.
+
+Usage is otherwise the same as the gem it replaces. Put `begin-snippet`/`end-snippet` comments around the code
+you want to include:
+
+```ruby
+# begin-snippet: my_snippet
+def my_method
+  ...
+end
+# end-snippet
+```
+
+Then include it from a page or post:
+
+```liquid
+{% include_snippet my_snippet from path/to/file.rb %}
+```
+
+Or set a default source file in front matter, and override it per-tag when needed:
+
+```yaml
+---
+snippet_source: "path/to/file.rb"
+snippet_comment_prefix: "//" # defaults to "#"
+---
+```
+
+See the source of [`lib/creek-jekyll-theme/include_snippet.rb`](lib/creek-jekyll-theme/include_snippet.rb) for
+full documentation.
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/creek-service/creek-jekyll-theme. 
@@ -48,7 +97,7 @@ your browser at `http://localhost:4000`. This starts a Jekyll server using this 
 like normal to test the theme's contents. As you make modifications to the theme and to your content, 
 the site will regenerate, and you should see the changes in the browser after a refresh, just like normal.
 
-When the theme is released, only the files in `_dat`, `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+When the theme is released, only the files in `_data`, `_layouts`, `_includes`, `_sass`, `assets` and `lib` tracked with Git will be bundled.
 To add a custom directory to the theme-gem, please edit the regexp in `creek-jekyll-theme.gemspec` accordingly.
 
 ## License
